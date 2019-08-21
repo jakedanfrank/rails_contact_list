@@ -1,0 +1,7 @@
+<h1>Index - Contacts</h1>
+<% @contacts.each do |contact| %>
+  <h2><%= contact.first_name %>
+  <%= contact.last_name %></h2>
+  <%= link_to 'Show Contact', contact_path(contact) %>
+
+<% end %>
